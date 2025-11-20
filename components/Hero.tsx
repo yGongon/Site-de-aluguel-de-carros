@@ -3,14 +3,6 @@ import { WHATSAPP_LINK, CITY_NAME } from '../data';
 import { Icons } from './Icons';
 
 const Hero: React.FC = () => {
-  const scrollToCatalog = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const element = document.getElementById('catalogo');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="relative bg-slate-900 text-white py-20 lg:py-32 overflow-hidden">
       {/* Background Image with Overlay */}
@@ -54,7 +46,6 @@ const Hero: React.FC = () => {
             </a>
             <a 
               href="#catalogo"
-              onClick={scrollToCatalog}
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-slate-200 bg-slate-800/50 border border-slate-700 rounded-lg hover:bg-slate-800 transition-all backdrop-blur-sm cursor-pointer"
             >
               Ver Veículos Disponíveis
